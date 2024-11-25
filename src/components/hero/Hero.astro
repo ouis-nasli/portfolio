@@ -2,8 +2,9 @@
 import DotsImage from "@assets/dots.svg";
 import Button from "@components/shared/Button.astro";
 import { Image, Picture } from "astro:assets";
-import LinkedIcon from "@assets/icons/linkedin.svg"
-import EmailIcon from "@assets/icons/email.svg"
+import LinkedIcon from "@assets/icons/linkedin.svg";
+import EmailIcon from "@assets/icons/email.svg";
+import WhatsappIcon from "@assets/icons/whatsapp.svg";
 ---
 
 <div class="py-24">
@@ -17,12 +18,12 @@ import EmailIcon from "@assets/icons/email.svg"
         class="invert-[0.1] -z-10 md:w-36 w-20"
       />
     </div>
-      <div class="z-10 relative">
-        <p class="text-primary text-display2 font-semibold">Hey there!, I'm-</p>
-        <h1 class="text-white text-display font-bold leading-none">
-          Ouis Nasli.
-        </h1>
-      </div>
+    <div class="z-10 relative">
+      <p class="text-primary text-display2 font-semibold">Hey there!, I'm-</p>
+      <h1 class="text-white text-display font-bold leading-none">
+        Ouis Nasli.
+      </h1>
+    </div>
     <div class="mt-8">
       <p
         class="text-grayText font-semibold text-display2 tracking-[-1.6px] leading-tight"
@@ -37,12 +38,20 @@ import EmailIcon from "@assets/icons/email.svg"
       </p>
       <p class="text-grayText text-display3">
         ⚡ Fullstack developer @ <a href="https://elev8xr.com/" target="_blank"
-          ><span class="text-primary">Elev8</span></a>
+          ><span class="text-primary">Elev8</span></a
+        >
       </p>
     </div>
     <div class="mt-11 flex items-center gap-x-4">
-      <Button title="LinkedIn" icon={LinkedIcon} />
-      <Button title="Email" icon={EmailIcon} />
-      <Button title="LinkedIn" icon={LinkedIcon} />
+      <a href="https://www.linkedin.com/in/ouissuaeidnasli/" target="_blank">
+        <Button title="LinkedIn" icon={LinkedIcon} />
+      </a>
+      <a href="mailto:ouis.suaeid.nasli@gmail.com">
+        <Button title="Email" icon={EmailIcon} />
+      </a>
+      <a href="https://wa.me/971505453986" target="_blank">
+        <Button title="Whatsapp" icon={WhatsappIcon} />
+      </a>
     </div>
+  </div>
 </div>
