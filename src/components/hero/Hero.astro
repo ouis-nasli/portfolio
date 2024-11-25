@@ -1,0 +1,48 @@
+---
+import DotsImage from "@assets/dots.svg";
+import Button from "@components/shared/Button.astro";
+import { Image, Picture } from "astro:assets";
+import LinkedIcon from "@assets/icons/linkedin.svg"
+import EmailIcon from "@assets/icons/email.svg"
+---
+
+<div class="py-24">
+  <div class="relative">
+    <div class="absolute md:-left-8 -left-3 -top-3">
+      <Image
+        src={DotsImage}
+        alt="Dots"
+        decoding="async"
+        loading="lazy"
+        class="invert-[0.1] -z-10 md:w-36 w-20"
+      />
+    </div>
+      <div class="z-10 relative">
+        <p class="text-primary text-display2 font-semibold">Hey there!, I'm-</p>
+        <h1 class="text-white text-display font-bold leading-none">
+          Ouis Nasli.
+        </h1>
+      </div>
+    <div class="mt-8">
+      <p
+        class="text-grayText font-semibold text-display2 tracking-[-1.6px] leading-tight"
+      >
+        <span class="text-white">Software Developer</span> Specialize in transforming
+        ideas into <br class="md:visible xs:hidden" /> beautifully crafted products.
+      </p>
+    </div>
+    <div class="mt-11">
+      <p class="text-grayText text-display3">
+        🚀 Currently specializing in Frontend (React / Next.js)
+      </p>
+      <p class="text-grayText text-display3">
+        ⚡ Fullstack developer @ <a href="https://elev8xr.com/" target="_blank"
+          ><span class="text-primary">Elev8</span></a>
+      </p>
+    </div>
+    <div class="mt-11 flex items-center gap-x-4">
+      <Button title="LinkedIn" icon={LinkedIcon} />
+      <Button title="Email" icon={EmailIcon} />
+      <Button title="LinkedIn" icon={LinkedIcon} />
+    </div>
+</div>

@@ -1,0 +1,15 @@
+---
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  title: string;
+  icon: ImageMetadata;
+}
+
+const {icon, title} = Astro.props
+---
+
+<button class="flex items-center select-none rounded-md font-semibold text-base text-white bg-[#ffffff14] h-10 min-w-10 px-4 gap-x-2"  >
+    <img src={icon.src} alt="">
+     {title}
+</button>
