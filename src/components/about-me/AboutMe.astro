@@ -1,0 +1,70 @@
+---
+import { Image } from "astro:assets";
+import MeImage from "@assets/imgs/me.jpg";
+import DotsImage from "@assets/dots.svg";
+---
+
+<div class="flex items-center gap-x-4 py-24">
+  <div class="flex-1">
+    <h1 class="text-white text-2xl font-bold">⚡ About Me</h1>
+    <p class="text-grayText mt-4">
+      Hi, I’m Ouis, a dedicated front-end developer with over five years of
+      experience delivering modern, responsive, and user-friendly web
+      applications. I specialize in React, Next, TypeScript, and creating
+      seamless digital experiences that blend functionality with design.
+    </p>
+    <p class="text-grayText mt-4">
+      Throughout my career, I’ve worked on diverse projects across industries,
+      including Fleet Management Systems <a
+        href="https://en.wikipedia.org/wiki/Fleet_management"
+        target="_blank"><span class="text-primary">(FMS)</span></a
+      >, Learning Management Systems
+      <a
+        href="https://en.wikipedia.org/wiki/Learning_management_system"
+        target="_blank"><span class="text-primary">(LMS)</span></a
+      >, E-commerce platforms, and Customer Relationship Management <a
+        href="https://en.wikipedia.org/wiki/Customer_relationship_managements"
+        target="_blank"><span class="text-primary">(CRM)</span></a
+      >
+      solutions. My strengths lie in problem solving, attention to detail, and a
+      commitment to delivering high quality work.
+    </p>
+    <p class="text-grayText mt-4">
+      As a fast learner, I’m always exploring new technologies and innovative
+      approaches to stay ahead in this ever evolving field. I’m passionate about
+      building solutions that make a meaningful impact and collaborating with
+      others to achieve shared goals.
+    </p>
+    <p class="text-gradient mt-4">
+      Let’s work together to bring your ideas to life!
+    </p>
+  </div>
+  <div class="relative flex-1 flex justify-center">
+    <div class="absolute md:right-8 -right-3 -top-3">
+      <Image
+        src={DotsImage}
+        alt="Dots"
+        decoding="async"
+        loading="lazy"
+        class="invert-[0.1] -z-10 md:w-36 w-20"
+      />
+    </div>
+    <div>
+      <Image
+        src={MeImage}
+        alt="Ouis Image"
+        decoding="async"
+        loading="lazy"
+        class="md:w-96 w-20 rounded-full"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .text-gradient {
+    background: -webkit-linear-gradient(left, #8f9094, #3ccf91);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
